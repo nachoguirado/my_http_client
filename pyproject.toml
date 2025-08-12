@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "my-http-client"
+version = "0.1.0"
+description = "Modular HTTP client in Python for GET, POST, and more, with support for authentication, middleware, and parsers."
+authors = [
+    { name = "Nacho Guirado Zuriaga", email = "nachoguiradozuriaga@gmail.com" }
+]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "requests>=2.31.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/your-username/my-http-client"
+Documentation = "https://github.com/your-username/my-http-client/wiki"
+Issues = "https://github.com/your-username/my-http-client/issues"
+
+[tool.black]
+line-length = 88
+
+[tool.isort]
+profile = "black"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
